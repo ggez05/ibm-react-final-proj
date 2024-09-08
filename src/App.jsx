@@ -6,7 +6,7 @@ import ShoppingCartPage from "./pages/ShoppingCartPage";
 
 function App() {
   return (
-    <Router basename="/nursery">
+    <Router basename="/ibm-react-final-proj">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/products" element={<ProductListingPage />} />
