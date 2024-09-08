@@ -1,0 +1,36 @@
+.landing-page {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.landing-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.get-started-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #60ff10;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.get-started-btn:hover {
+  background-color: #00b389;
+}
+
+.landing-wrap {
+  display: flex;
+  height: 100%;
+}

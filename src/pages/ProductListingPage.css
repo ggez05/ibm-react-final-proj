@@ -1,0 +1,16 @@
+.product-listing-page {
+  padding: 2rem;
+}
+
+.plant-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+}

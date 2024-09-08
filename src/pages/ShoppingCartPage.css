@@ -1,0 +1,72 @@
+.shopping-cart-page {
+  padding: 2rem;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.cart-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quantity button {
+  cursor: pointer;
+}
+
+.del-btn {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  padding: 4px 15px 4px 15px !important;
+}
+
+.del-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.cart-summary {
+  margin-top: 30px;
+  font-size: 17px;
+}
+
+.cart-summary button {
+  background-color: aqua;
+  cursor: pointer;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 15px 40px 15px 40px;
+  font-size: 17px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 5px;
+}
