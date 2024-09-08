@@ -58,8 +58,8 @@ const plants = [
 const categories = ["Air Purifying", "Aromatic", "Ornamental"];
 
 const ProductListingPage = () => {
-  const { addToCart } = useCart();
-
+  const { cart } = useCart();
+  console.log(cart);
   return (
     <div className="product-listing-page">
       <Header />
@@ -72,9 +72,16 @@ const ProductListingPage = () => {
             <div className="plant-cards">
               {plants
                 .filter((plant) => plant.category === category)
-                .map((plant) => (
-                  <PlantCard key={plant.id} plant={plant} />
-                ))}
+                .map((plant) => {
+                  const isInCart = cart.some((item) => item.id === plant.id);
+                  return (
+                    <PlantCard
+                      key={plant.id}
+                      plant={plant}
+                      isInCart={isInCart}
+                    />
+                  );
+                })}
             </div>
           </div>
         ))}

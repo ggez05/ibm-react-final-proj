@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useCart } from "../context/CartContext";
 import "./PlantCard.css";
 
-const PlantCard = ({ plant }) => {
+const PlantCard = ({ plant, isInCart }) => {
   const { addToCart } = useCart();
-  const [added, setAdded] = useState(false);
+  const [added, setAdded] = useState(isInCart);
 
   const handleAddToCart = () => {
     addToCart(plant);

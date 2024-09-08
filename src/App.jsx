@@ -6,7 +6,7 @@ import ShoppingCartPage from "./pages/ShoppingCartPage";
 
 function App() {
   return (
-    <Router basename="/Final-Project-Paradise-Nursery-Shopping-Application">
+    <Router basename="/nursery">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/products" element={<ProductListingPage />} />

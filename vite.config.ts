@@ -5,7 +5,7 @@ export default defineConfig({
   server: {
     watch: { usePolling: true },
   },
-  base: "/Final-Project-Paradise-Nursery-Shopping-Application/",
+  base: "/nursery",
   plugins: [
     react({
       include: "**/*.tsx",

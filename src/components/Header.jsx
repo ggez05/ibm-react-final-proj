@@ -11,10 +11,16 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">
-        <Link to="/">
-          <img src={logo} alt="Paradise Nursery Logo" className="logo-img" />
-        </Link>
+      <div className="header-werr">
+        <div className="logo">
+          <Link to="/">
+            <img src={logo} alt="Paradise Nursery Logo" className="logo-img" />
+          </Link>
+        </div>
+        <div className="tagline">
+          <span>Paradise Nursery</span>
+          <p>Where Green Meets Serenity!</p>
+        </div>
       </div>
       <div className="nav">
         <Link to="/products">Products</Link>

@@ -1,9 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import { useCart } from "../context/CartContext";
 import "./ShoppingCartPage.css";
 
 const ShoppingCartPage = () => {
+  const navigate = useNavigate();
+  const handleRedirect = () => {
+    navigate("/products");
+  };
   const { cart, removeFromCart, incrementQuantity, decrementQuantity } =
     useCart();
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
@@ -50,6 +55,9 @@ const ShoppingCartPage = () => {
           <p>Total Items: {totalItems}</p>
           <p>Total Cost: ${totalCost.toFixed(2)}</p>
           <button onClick={() => alert("To be implemented!")}>Checkout</button>
+          <br />
+          <br />
+          <button onClick={handleRedirect}>Continue Shopping</button>
         </div>
       </div>
     </div>
