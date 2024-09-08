@@ -54,7 +54,7 @@ const ShoppingCartPage = () => {
         <div className="cart-summary">
           <p>Total Items: {totalItems}</p>
           <p>Total Cost: ${totalCost.toFixed(2)}</p>
-          <button onClick={() => alert("To be implemented!")}>Checkout</button>
+          <button onClick={() => alert("Coming Soon!")}>Checkout</button>
           <br />
           <br />
           <button onClick={handleRedirect}>Continue Shopping</button>
