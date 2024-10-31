@@ -5,7 +5,7 @@ export default defineConfig({
   server: {
     watch: { usePolling: true },
   },
-  base: "/ibm-react-final-proj",
+  base: "/ibm-react-final-proj/",
   plugins: [
     react({
       include: "**/*.tsx",
